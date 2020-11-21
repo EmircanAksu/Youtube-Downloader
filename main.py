@@ -13,8 +13,7 @@ def downloader():
         title_new = title.center(158, '-')
         print(Fore.RED + BOLD + title_new + Fore.RED)
         url = input(Fore.CYAN + "Paste Youtube Link: " + Fore.CYAN)
-        format = input(Style.RESET_ALL +
-                       "\nChoose File Format(video or audio): ")
+        format = input(Style.RESET_ALL + "\nChoose File Format(video or audio): ")
         if format == "video":
             print(Fore.GREEN + BOLD + "Selected Format => video" + Fore.GREEN)
             yt = YouTube(url, on_progress_callback=on_progress)
