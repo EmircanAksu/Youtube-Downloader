@@ -10,7 +10,7 @@ BOLD = '\033[1m'
 def downloader():
     try:
         title = "Youtube Downloader"
-        title_new = title.center(158, '-')
+        title_new = title.center(50, '-')
         print(Fore.RED + BOLD + title_new + Fore.RED)
         url = input(Fore.CYAN + "Paste Youtube Link: " + Fore.CYAN)
         format = input(Style.RESET_ALL + "\nChoose File Format(video or audio): ")
